@@ -19,8 +19,6 @@ import sun.applet.Main;
 public class SortDemoTest{
 	public SortDemoData data = new SortDemoData();
 
-    public SortDemo sortDemo = new SortDemo();
-
 	/**
 	* testNewAccountsType checks for valid input types in the 1st parameter
 	*/
@@ -84,14 +82,5 @@ public class SortDemoTest{
 		assertTrue(data.myArray[0].key == data2.myArray[0].key );
 		assertTrue(data.myArray[1].key == data2.myArray[1].key );
 		assertTrue(data.myArray[2].key == data2.myArray[2].key );
-	}
-	
-	@Test
-	public void testLaunchApplet() {
-		sortDemo.init();
-		sortDemo.displayHelp();
-		sortDemo.runDemo();
-	}
-	
-	
+	}	
 }
